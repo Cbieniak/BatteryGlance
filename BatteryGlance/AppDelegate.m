@@ -14,6 +14,9 @@
 
 @implementation AppDelegate
 
+const NSString * kBatteryLevel = @"kBatteryLevel";
+const NSString * kBatteryState = @"kBatteryState";
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -40,6 +43,17 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply {
+    UIDevice *device = [UIDevice currentDevice];
+    device.batteryMonitoringEnabled = YES;
+    float batteryLevel = [device batteryLevel] * 100;
+    BOOL isCharging = [device batteryState] == UIDeviceBatteryStateCharging || [device batteryState] == UIDeviceBatteryStateFull;
+    device.batteryMonitoringEnabled = NO;
+    reply(@{kBatteryLevel : [NSNumber numberWithFloat:batteryLevel],
+            kBatteryState : [NSNumber numberWithBool:isCharging]});
+
 }
 
 @end

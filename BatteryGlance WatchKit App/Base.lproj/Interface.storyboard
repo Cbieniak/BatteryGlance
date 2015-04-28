@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group height="1" alignment="left" id="jCT-nx-cG4">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="--" textAlignment="center" id="OLo-Eg-Gek">
+                                    <fontDescription key="font" type="system" pointSize="56"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="percentLabel" destination="OLo-Eg-Gek" id="I61-3P-9Yc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="164" y="217"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="body3" id="Sv0-Ai-Zie" customClass="GlanceController">
+                    <items>
+                        <label alignment="left" text="Charged State" id="uOj-mX-aph"/>
+                        <group alignment="left" id="eew-Gs-W6Y">
+                            <items>
+                                <label width="1" height="1" alignment="left" verticalAlignment="center" text="--" textAlignment="center" id="FBr-jF-2Rb">
+                                    <fontDescription key="font" type="system" pointSize="56"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="percentLabel" destination="FBr-jF-2Rb" id="r9W-ZA-CnQ"/>
+                        <outlet property="stateLabel" destination="uOj-mX-aph" id="u2u-nM-4Fa"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="514"/>
+        </scene>
+    </scenes>
+</document>

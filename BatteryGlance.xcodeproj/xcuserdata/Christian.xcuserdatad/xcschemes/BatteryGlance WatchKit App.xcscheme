@@ -14,23 +14,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA4A53E01AEFA26D00FA1473"
-               BuildableName = "BatteryGlance.app"
-               BlueprintName = "BatteryGlance"
+               BlueprintIdentifier = "AA4A541B1AEFA28200FA1473"
+               BuildableName = "BatteryGlance WatchKit App.app"
+               BlueprintName = "BatteryGlance WatchKit App"
                ReferencedContainer = "container:BatteryGlance.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA4A53F91AEFA26E00FA1473"
-               BuildableName = "BatteryGlanceTests.xctest"
-               BlueprintName = "BatteryGlanceTests"
+               BlueprintIdentifier = "AA4A540D1AEFA28200FA1473"
+               BuildableName = "BatteryGlance WatchKit Extension.appex"
+               BlueprintName = "BatteryGlance WatchKit Extension"
+               ReferencedContainer = "container:BatteryGlance.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AA4A53E01AEFA26D00FA1473"
+               BuildableName = "BatteryGlance.app"
+               BlueprintName = "BatteryGlance"
                ReferencedContainer = "container:BatteryGlance.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,23 +56,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA4A53F91AEFA26E00FA1473"
-               BuildableName = "BatteryGlanceTests.xctest"
-               BlueprintName = "BatteryGlanceTests"
-               ReferencedContainer = "container:BatteryGlance.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA4A53E01AEFA26D00FA1473"
-            BuildableName = "BatteryGlance.app"
-            BlueprintName = "BatteryGlance"
+            BlueprintIdentifier = "AA4A541B1AEFA28200FA1473"
+            BuildableName = "BatteryGlance WatchKit App.app"
+            BlueprintName = "BatteryGlance WatchKit App"
             ReferencedContainer = "container:BatteryGlance.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,16 +76,27 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/BatteryGlance">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA4A53E01AEFA26D00FA1473"
-            BuildableName = "BatteryGlance.app"
-            BlueprintName = "BatteryGlance"
+            BlueprintIdentifier = "AA4A541B1AEFA28200FA1473"
+            BuildableName = "BatteryGlance WatchKit App.app"
+            BlueprintName = "BatteryGlance WatchKit App"
             ReferencedContainer = "container:BatteryGlance.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AA4A541B1AEFA28200FA1473"
+            BuildableName = "BatteryGlance WatchKit App.app"
+            BlueprintName = "BatteryGlance WatchKit App"
+            ReferencedContainer = "container:BatteryGlance.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -91,16 +106,27 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/BatteryGlance">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA4A53E01AEFA26D00FA1473"
-            BuildableName = "BatteryGlance.app"
-            BlueprintName = "BatteryGlance"
+            BlueprintIdentifier = "AA4A541B1AEFA28200FA1473"
+            BuildableName = "BatteryGlance WatchKit App.app"
+            BlueprintName = "BatteryGlance WatchKit App"
             ReferencedContainer = "container:BatteryGlance.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AA4A541B1AEFA28200FA1473"
+            BuildableName = "BatteryGlance WatchKit App.app"
+            BlueprintName = "BatteryGlance WatchKit App"
+            ReferencedContainer = "container:BatteryGlance.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
